@@ -1,0 +1,600 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@83e4e8776725a49f9e738b19d1e718e7404d6c19/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Feb 1, 2023 12:34:58 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@SmokeTest</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="status-avatar fail-bg">
+            <i class="fa fa-times text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">OutLook Portal  User Login</p>
+            <p class="text-sm"><span>12:34:59 pm</span> / <span>85.097 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=1</span></div>
+<h5 class="test-status text-fail">OutLook Portal User Login</h5>
+<span class='badge badge-success'>02.01.2023 12:34:59</span>
+<span class='badge badge-danger'>02.01.2023 12:36:24</span>
+<span class='badge badge-default'>85.097 secs</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Login with valid credentials</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.OutLook_Login.user_navigate_to_outlook_portal_login_page()">
+                <span>Given User navigate to outlook portal Login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.OutLook_Login.user_enters_valid_email_address_for_login_outlook_portal(java.lang.String)">
+                <span>When User enters valid email address for login outlook portal "sierrausercci.live@outlook.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.OutLook_Login.clicks_on_next_button()">
+                <span>And Clicks on Next button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.OutLook_Login.ueer_enters_valid_password_for_customer_portal(java.lang.String)">
+                <span>And Ueer enters valid password for outlook "Welcome*1234"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.OutLook_Login.clicks_on_login_button()">
+                <span>And Clicks on Login button for outlook</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.OutLook_Login.clicks_on_yes_button()">
+                <span>And Clicks on Yes button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.OutLook_Login.clicks_on_menu_button()">
+                <span>And Clicks on Menu button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.OutLook_Login.clicks_on_outlook()">
+                <span>And Clicks on Outlook</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.OutLook_Login.user_should_login_successfully()">
+                <span>Then User should login successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.OutLook_Login.clicks_on_search()">
+                <span>And Clicks on Search</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.OutLook_Login.search_the_workorder_id(java.lang.String)">
+                <span>And Search the Workorder Id "385671038"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="com.sierra.stepDefinitions.OutLook_Login.clicks_on_workorder_id()">
+                <span>And Clicks on Workorder Id</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=109.0.5414.120)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac31af02c7a6cee8befcc90c74a73b5d, clickElement {id=19e29a10-7e12-4c02-b4ce-cd70e4c83a85}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\KARTHI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56331/devtoo..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (ac31af02c7a6cee8befcc90c74a73b5d)] -> css selector: ion-row#submit_btns>ion-col>button]
+Session ID: ac31af02c7a6cee8befcc90c74a73b5d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.sierra.stepDefinitions.OutLook_Login.clicks_on_workorder_id(OutLook_Login.java:127)
+	at ✽.Clicks on Workorder Id(file:///C:/Karthik/BDD%20BKP/Sierracircuits_BDDV2/Sierracircuits_BDD/src/test/resources/features/CCI/OutLook_Login.feature:16)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>com.cucumber.common.Hooks.takeScreenShotOnFailedScenario(io.cucumber.java.Scenario)</span>
+      <div>Login with valid credentials
+          <div class="row mb-3"><div class="col-md-3">
+    <img data-featherlight='../Screenshots/ embedded1.png' src="../Screenshots/ embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="status-avatar pass-bg">
+            <i class="fa fa-check text-white"></i>
+          </div>
+          <div class="test-detail">
+            <span class="meta text-white badge badge-sm"></span>
+            <p class="name">Customer Portal  User Login</p>
+            <p class="text-sm"><span>12:36:24 pm</span> / <span>18.667 secs</span></p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<div class='float-right'><span class='badge badge-default'>#test-id=18</span></div>
+<h5 class="test-status text-pass">Customer Portal User Login</h5>
+<span class='badge badge-success'>02.01.2023 12:36:24</span>
+<span class='badge badge-danger'>02.01.2023 12:36:43</span>
+<span class='badge badge-default'>18.667 secs</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="19"><span class="badge log pass-bg mr-2">Pass</span>Login with valid credentials</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.login_cp_stepDefini.user_navigate_to_customer_portal_login_page()">
+                <span>Given User navigate to customer portal Login page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.login_cp_stepDefini.user_enters_valid_email_address_for_customer_portal(java.lang.String)">
+                <span>When User enters valid email address for customer portal "scanewuser55@gmail.com"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.login_cp_stepDefini.ueer_enters_valid_password_for_customer_portal(java.lang.String)">
+                <span>And Ueer enters valid password for customer portal "Welcome*123"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.login_cp_stepDefini.clicks_on_login_button()">
+                <span>And Clicks on Login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.login_cp_stepDefini.user_should_login_successfully()">
+                <span>Then Customer Portal user should login successfully</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.login_cp_stepDefini.the_user_Navigate_to_Design_RFQ_Page()">
+                <span>And the user Navigate to Design RFQ Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.sierra.stepDefinitions.login_cp_stepDefini.verify_the_design_rfq_page_get_opend()">
+                <span>And Verify the Design RFQ Page get opend</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left">
+<li>
+<a href="">
+<span class="font-size-14">Exception</span>
+</a>
+</li>
+</ul>
+<ul class="tools text-right">
+<li>
+<a href="#">
+<span class="badge badge-primary">1</span>
+</a>
+</li>
+</ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="open-test">
+<div class="test-detail">
+<p class="name">org.openqa.selenium.ElementNotInteractableException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementNotInteractableException</h4>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:35:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>And Clicks on Workorder Id</a>
+<div class="">
+<span class="badge badge-default">Login with valid credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul>
+<li>
+<a class="back-to-test" href="javascript:void(0)">
+<i class="fa fa-arrow-left"></i>
+</a>
+</li>
+</ul>
+</div>
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Tags</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@SmokeTest</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SmokeTest</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>12:34:59 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">OutLook Portal User Login.Login with valid credentials</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:36:24 pm</td>
+<td>
+<a href="#" class="linked" test-id='18' id='19'>Login with valid credentials</a>
+<div class="">
+<span class="badge badge-default">Customer Portal User Login.Login with valid credentials</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul>
+<li>
+<a class="back-to-test" href="javascript:void(0)">
+<i class="fa fa-arrow-left"></i>
+</a>
+</li>
+</ul>
+</div>
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Feb 1, 2023 12:34:58 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Feb 1, 2023 12:36:43 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>1</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'>
+<b>1</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='50%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='50%'><b>1</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='50%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='95%'><b>19</b> steps passed</small></div>
+<div>
+<small data-tooltip='5%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@SmokeTest</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>50%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 1,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 1,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 19,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@5cf22a596531402644b8523470526952516f345f/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
